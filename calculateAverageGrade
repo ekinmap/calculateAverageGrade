@@ -1,0 +1,23 @@
+function calculateAverageGrade() {
+  console.log("Программа для вычисления среднего балла по школьным оценкам");
+
+  var grades = [];
+  var totalGrades = parseInt(prompt("Введите общее количество оценок:"));
+
+  for (var i = 1; i <= totalGrades; i++) {
+    var grade = parseFloat(prompt("Введите оценку №" + i + ":"));
+    grades.push(grade);
+  }
+
+  var sum = 0;
+  for (var j = 0; j < grades.length; j++) {
+    sum += grades[j];
+  }
+
+  var averageGrade = sum / grades.length;
+
+  console.log("Оценки:", grades.join(", "));
+  console.log("Средний балл:", averageGrade.toFixed(2));
+}
+
+calculateAverageGrade();
