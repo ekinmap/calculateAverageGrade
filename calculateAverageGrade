@@ -20,4 +20,5 @@ function calculateAverageGrade() {
   console.log("Средний балл:", averageGrade.toFixed(2));
 }
 
+
 calculateAverageGrade();
